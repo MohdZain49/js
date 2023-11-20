@@ -28,8 +28,8 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);        //convert to boolean
 let someNumber = undefined;
 
 let stringNumber = String(someNumber);
-console.log(stringNumber);
-console.log(typeof stringNumber);
+// console.log(stringNumber);
+// console.log(typeof stringNumber);
 
 
 // 33 => 33
@@ -37,3 +37,34 @@ console.log(typeof stringNumber);
 // false => false
 // null => null
 // undefined => undefined
+
+
+// ******************************OPERATION*******************************
+
+
+let value = 45;
+let negValue = -value;
+console.log(negValue);
+
+console.log(2 + 2);
+console.log(2 - 2);
+console.log(2 * 2);
+console.log(3 ** 2);
+console.log(4 / 2);
+console.log(5 % 3);
+
+let str1 = "Hello "
+let str2 = "Mohd Zain"
+let str3 = str1 + str2;
+console.log(str3)
+
+
+console.log('3' + 4);
+console.log(3 + '4');
+console.log(3 + 4 + '5');
+console.log("6" + "7" + 5);
+console.log("6" + "7" + 5 + 4);
+console.log(4 + '4' + 4);
+
+console.log(+true);
+console.log(+"");
