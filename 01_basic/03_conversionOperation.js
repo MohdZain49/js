@@ -1,7 +1,7 @@
 let score = true;
 // console.log(typeof score);
 
-let valueInNumber = Number(score);              //convert to number
+let valueInNumber = Number(score);                  //convert to number
 // console.log(typeof valueInNumber);
 // console.log(valueInNumber);
 
@@ -27,7 +27,7 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);        //convert to boolean
 
 let someNumber = undefined;
 
-let stringNumber = String(someNumber);
+let stringNumber = String(someNumber);              // convert to string
 // console.log(stringNumber);
 // console.log(typeof stringNumber);
 

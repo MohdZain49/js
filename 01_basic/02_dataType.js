@@ -12,15 +12,22 @@ console.log('Mohd Zain');
 
 
 /*
-    JAVASCRIPT DATATYPE
-    1. Number
-    2. Bigint
-    3. String
-    4. Boolean
-    5. Undefined
-    6. Null
-    7. Object
-    8. Symbol
+*****************************JAVASCRIPT DATATYPE*****************************
+
+There are two type of datatype
+
+1) Primitive datatype :
+    1. Number               2. String
+    3. BigInt               4. Boolean
+    5. Undefined            6. Null
+    7. Symbol
+    
+
+2) Non-primitive datatype :
+    1. Array
+    2. Object
+    3. function
+
 */
 
 
@@ -62,6 +69,11 @@ console.log(expo1, expo2);
 let largeNum = BigInt(2343453438495324095732408573459845);
 console.log(largeNum);
 console.log(typeof largeNum);
+ 
+let anotherLargerNum = 8965453509348059483053409857304934895n;
+console.log(anotherLargerNum);
+console.log(typeof anotherLargerNum);
+
 
 
 // 4. Boolean
@@ -71,4 +83,55 @@ let y = false;
 console.log(x, y);
 console.log(typeof x, typeof y);
 
-//
+
+
+// 5. null
+
+let outsideTem = null;
+console.log(outsideTem);
+console.log(typeof outsideTem);
+
+
+
+// 6. undefined
+
+let carName;
+console.log(carName);
+
+let userEmail = undefined;
+console.log(userEmail);
+
+
+
+// 7. symbol
+
+let id = Symbol('123');
+
+let anotherID = Symbol('123');
+
+console.log(id === anotherID);
+
+
+
+// 8. array
+
+let myArray = ["Tayoto", "BMW", "Lamborgini", "Farari"];
+console.log(myArray);
+console.log(typeof myArray);
+
+
+
+// 9. object
+
+let myObj = {name: 'Mohd Zain', roll_no: 2104790100041, course: 'BTech', branch: 'CSE'};
+console.log(myObj);
+console.log(typeof myObj);
+
+
+
+// 10. function
+let myFun = function() {
+    console.log('Hello World');
+}
+myFun();
+console.log(typeof myFun);
