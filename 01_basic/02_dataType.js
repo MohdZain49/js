@@ -14,19 +14,19 @@ console.log('Mohd Zain');
 /*
 *****************************JAVASCRIPT DATATYPE*****************************
 
-There are two type of datatype
+    There are two type of datatype :
 
-1) Primitive datatype :
-    1. Number               2. String
-    3. BigInt               4. Boolean
-    5. Undefined            6. Null
-    7. Symbol
-    
+    1) Primitive datatype :
+        1. Number               2. String
+        3. BigInt               4. Boolean
+        5. Undefined            6. Null
+        7. Symbol
+        
 
-2) Non-primitive datatype :
-    1. Array
-    2. Object
-    3. function
+    2) Non-primitive datatype :
+        1. Array
+        2. Object
+        3. function
 
 */
 
