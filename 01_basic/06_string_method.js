@@ -50,3 +50,51 @@ console.log(message.substr(10, 15));           // return substring from 10th pos
 console.log(message.substr(10));               // return substring from 10th position to the end.
 
 console.log(message.substring(-10));           // position count from end.
+
+
+
+// 3. *************** Replacing String Content ************
+
+// 1) replace()                     //replaces a specified value with another value in a string
+
+let sentance = 'Please visit Amazon' 
+let anotherSentance = sentance.replace('Amazon', 'Flipkart');
+
+console.log(anotherSentance);           // return new string
+console.log(sentance);                  // doesn't change called string
+
+let strng = "rain rain go away, come again another day."
+
+console.log(strng.replace('rain', 'train'));            // replace only first match
+
+console.log(strng.replace(/rain/g, 'train'));           // replace all matches
+
+let tag = 'Coffee is life';
+
+console.log(tag.replace(/coffee/i, 'Tea'));             // replace case insensitive
+
+
+// 2) replaceAll()
+
+let inputString = 'The Cat is lovely animal. Cat is popular animal.'
+
+let outputString = inputString.replaceAll('Cat', 'Dog');
+
+console.log(outputString);
+
+
+
+// 4. *********** converting upper and lower case *************
+
+// 1) toUpperCase()                 // change string into upper case
+
+let firstString = 'Hello World';
+console.log(firstString);
+console.log(firstString.toUpperCase());
+
+
+// 2) toLowerCase()                 // change string into lower case
+
+let secondString = 'Hello World'
+console.log(secondString);
+console.log(secondString.toLowerCase());
