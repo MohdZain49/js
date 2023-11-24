@@ -98,3 +98,45 @@ console.log(firstString.toUpperCase());
 let secondString = 'Hello World'
 console.log(secondString);
 console.log(secondString.toLowerCase());
+
+
+
+// 5. ************* JavaScript String concat *****************
+
+// concat();
+
+let hello = 'Hello World';
+let name = 'Mohd Zain';
+let plus = hello.concat(' ', name);
+console.log(plus);
+
+let someWord = 'I am';
+plus = hello.concat(' ', someWord, ' ', name);
+console.log(plus);
+
+
+
+// 6. *************** Triming string ****************
+
+// 1) trim()
+
+let firstText = '         Hello World    ';
+let secondText = firstText.trim();
+
+console.log(firstText);
+console.log('lenght firstText ' + firstText.length);
+
+console.log(secondText);
+console.log('length secondText ' + secondText.length);
+
+
+// 2) trimStart()
+
+let thirdText = firstText.trimStart();
+console.log(thirdText);
+
+
+// 3) trimEnd()
+
+let fourthText = firstText.trimEnd();
+console.log(fourthText);
