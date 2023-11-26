@@ -140,3 +140,86 @@ console.log(thirdText);
 
 let fourthText = firstText.trimEnd();
 console.log(fourthText);
+
+
+
+// 7. ***************** String padding *************
+
+// 1) padStart()    // pad string with another string until it reach a given length
+
+text = 'zain';
+let anotherText = text.padStart(8, '4');
+console.log(anotherText);
+
+text = '5';
+let paddedText = text.padStart(7, 'x');
+console.log(paddedText);
+
+let number = 7;                     // pad number by converting it into string.
+let stringNum = String(7);
+let paddedNumber = stringNum.padStart(6, '0');
+console.log(paddedNumber);
+
+
+// 2) padEnd()        // pad string with another string until it reach a given length
+
+text = '4';
+anotherText = text.padEnd(6, 'a');
+console.log(anotherText);
+
+text = '3'
+anotherText = text.padEnd(5, '1');
+console.log(anotherText);
+
+text = 4;                            // pad number by converting it into string.
+stringNum = text.toString();
+anotherText = stringNum.padEnd(6, '8');
+console.log(anotherText);
+
+
+
+// 8. ************* Extracting String Characters ***********
+
+// 1) charAt()              // return character at specified position.
+
+let emailAddress = 'pappu420@gmail.com';
+console.log(emailAddress.charAt(4));
+
+let userName = 'Pappu Singh';
+console.log(userName.charAt(8));
+
+
+// 2) charCodeAt()          // return character unicode at specified position.
+
+let password = '34985398';
+console.log(password.charCodeAt(0));
+
+let lastName = "Johnson";
+console.log(lastName.charCodeAt(3));
+
+
+// 3) property access    // returns unicode of character at specified index.
+
+let userInput = 'Programming is fun';
+console.log(userInput[4]);
+
+
+
+// 9. ************** Split string *************
+
+// split()          // Split string into substrings using specified separator
+                    // return them as an array.
+
+let fact = "Silence speaks where words often fail."
+let arrayFact = fact.split(' ')
+console.log(arrayFact);
+
+let fruits = 'Mango, Banana, Apple, Papaya';
+let arrayFruits = fruits.split(',');
+console.log(arrayFruits);
+
+let avengers = 'Iron man | Captain America | Thor | Hulk | Spider man';
+console.log(avengers.split('|'));
+
+console.log(avengers.split());
+console.log(avengers.split(''));
