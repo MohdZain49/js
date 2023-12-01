@@ -29,3 +29,52 @@ let text3 = 'The character \\ is backslash.'
 console.log(text1);
 console.log(text2);
 console.log(text3);
+
+
+// Template Literals use back-ticks (``) rather than the quotes ("") to define a string
+
+let text4 = `hello world`;
+console.log(text4);
+
+
+// quotes inside back-ticks
+
+let text5 = `He's often called "Johnny"`;
+console.log(text5);
+
+
+// multiline string
+
+let text6 = `Galaxies swirl, 
+telling tales of cosmic wonders 
+in celestial silence.`
+
+console.log(text6);
+
+let introduction = 
+`Name - Mohd Zain
+Course - BTech
+Branch - Computer Science and Engineering
+Roll_NO - 2104790100041`
+
+console.log(introduction);
+
+// Interpolation
+// Automatic replacing of variables with real values is called string interpolation.
+
+// variable substitution
+
+let firstName = 'Mohd';
+let lastName = "Zain";
+let fullName = `My first name is ${firstName} and last name is ${lastName}`
+console.log(fullName);
+
+
+// Expression substitution
+
+let length = 3;
+let width = 5;
+let height = 3;
+
+let volumeCuboid = `Volume of cuboid : ${length * width * height}`;
+console.log(volumeCuboid);
