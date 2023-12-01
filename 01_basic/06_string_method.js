@@ -223,3 +223,86 @@ console.log(avengers.split('|'));
 
 console.log(avengers.split());
 console.log(avengers.split(''));
+
+
+
+// 10. ************* Searching method **************
+
+// 1) indexOf()               // return index(position) of first occurence
+
+let sentence = "This is a sample sentence.";
+console.log(sentence.indexOf('sample'));
+
+let phrase1 = "Sunny day at the beach"
+console.log(phrase1.indexOf('night'));          // return -1
+
+let repeat_word = "sun sun and more sun";
+console.log(repeat_word.indexOf('sun'));        // start from 0 index
+console.log(repeat_word.indexOf('sun', 2));     // start from 2 index
+console.log(repeat_word.indexOf('sun', 10));    // start from 10 index
+
+
+// 2) lastIndexOf()         // return index of last occurence
+
+let phrase2 = "Coding is my passion. Coding is my hobby."; 
+console.log(phrase2.lastIndexOf('Coding'));
+console.log(phrase2.lastIndexOf('interest'));       // return -1
+
+let string1 = "The sun is shining, shining bright."
+console.log(string1.lastIndexOf('shining', 15));
+console.log(string1.lastIndexOf('shining', 20));
+
+
+// 3) search()          // return index of first match
+
+let string4 = "The cat sat on the mat, mat.";
+console.log(string4.search('mat'));
+
+
+// 4) match()           // return 
+
+let text2 = "The rain in SPAIN stays mainly in the plain";
+let info = text2.match('ain')
+console.log(info);
+console.log(info.length);
+
+
+// 5) matchAll()
+
+let text4 = "I love cats. Cats are very easy to love. Cats are very popular."
+const iterator = text4.matchAll("Cats");
+console.log(Array.from(iterator));
+
+
+// 6) includes()             // return true if string contains specified value.
+                             // Otherwise returns false.
+
+let greet = "Hello world, welcome to the universe.";
+console.log(greet.includes('welcome'));
+
+let text5 = "laugh laugh out loud, life life is too short short.";
+
+console.log(text5.includes('laugh'));         // start from 0 index
+console.log(text5.includes('laugh', 5));      // start from 5 index
+console.log(text5.includes('laugh', 10));     // start from 10 index
+
+console.log(text5.includes('laugh'));               // includes() is case-sensitive
+console.log(text5.includes('LAUGH'));
+
+
+// 7) startsWith()       // return true if string starts with specified value.
+
+let text6 = 'Coding is an art of problem-solving.';
+
+console.log(text6.startsWith('Coding'));
+console.log(text6.startsWith('art'));              // start from 0 index
+console.log(text6.startsWith('art', 13));          // start from 13 index
+
+
+// 8) endsWith()        // return true if string ends with specified value.
+
+let text7 = "Books open doors to new worlds.";
+
+console.log(text7.endsWith('worlds'));
+console.log(text7.endsWith('doors'));
+console.log(text7.endsWith('door', 17));           // start from 17 index
