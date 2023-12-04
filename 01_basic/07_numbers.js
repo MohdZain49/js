@@ -61,3 +61,6 @@ console.log(myNumber);
 // division with 0 also return infinity
 console.log(45 / 0);
 console.log(-23 / 0);
+
+// infinity is number 
+console.log(typeof Infinity);
