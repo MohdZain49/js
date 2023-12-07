@@ -106,4 +106,25 @@ console.log(`The new length of array 'javascriptLibraries' is ${individualLibrar
 
 
 
-// 5) 
+// 5) ++++++++++++ delete operator +++++++++++++++
+
+const bots = ['Alexa', 'Siri', 'Google Assistant'];
+delete bots[2];         // delete the element 2 and leaves hole at that position.
+console.log(bots);
+
+
+
+// 6) ++++++++++++ merging array (concatenating) +++++++++++
+
+// concat()  // combine two or more array and return new merged array.
+const desktopOS = ['Window', 'Mach', 'Linux', 'Unix'];
+const mobileOS = ['Android', 'IOS'];
+let operatingSystems = desktopOS.concat(mobileOS); 
+
+console.log(operatingSystems);
+console.log(desktopOS);         // not change
+console.log(mobileOS);          // not change
+
+const someOtherOS = ['MS-DOS', 'Fedora'];
+operatingSystems = desktopOS.concat(mobileOS, someOtherOS);
+console.log(operatingSystems);
