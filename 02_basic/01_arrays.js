@@ -126,5 +126,58 @@ console.log(desktopOS);         // not change
 console.log(mobileOS);          // not change
 
 const someOtherOS = ['MS-DOS', 'Fedora'];
-operatingSystems = desktopOS.concat(mobileOS, someOtherOS);
+operatingSystems = desktopOS.concat(mobileOS, someOtherOS);  // merging multiple arrays.
 console.log(operatingSystems);
+
+operatingSystems = operatingSystems.concat('Debian');   
+console.log(operatingSystems);                               // merging value.
+
+
+
+// 7) +++++++++++++++ Flattening array ++++++++++++++++++
+
+// Flattening an array is the process of reducing the dimensionality of an array.
+
+// flat() creates new array with sub-array elements concatenated to specified depth.
+const computerScienceSub = [['DSA', 'COA', 'DSTL'], ['OS', 'Micro.', 'TAFL'], ['DBMS', 'DAA', 'CD']];
+console.log(computerScienceSub);                        
+
+const totalSubjects = computerScienceSub.flat(1);               // depeth is 1.
+console.log(totalSubjects);
+
+const subjectsAndLabs = [['DSA', 'COA', 'DSTL'], ['OS', 'Micro.', 'TAFL'],
+['DBMS', 'DAA', 'CD', ['DBMS lab', 'CD lab', 'DAA lab']]];
+console.log(subjectsAndLabs.flat(2));;                          // depeth is 2.
+
+const someNumbers = [[2, 4, 8, [-2, -3, -8, [4, 9, 0]]], [5, 3, 7, [-1, -8, -9, [7, 4, 6]]]];
+console.log(someNumbers.flat(Infinity));                        // depeth is infinity.
+
+
+
+// 8) +++++++++++++ Splicing and Slicing ++++++++++++++++
+
+// 1. splice(start, deleteCount, item1, item2, .....);
+
+// Removes elements from an array and, if necessary, inserts new elements in their place.
+// return array of deleted elements.
+
+const ITCompanies = ['IBM', 'Microsoft', 'Infosys', 'Cisco', 'Wipro'];
+console.log(ITCompanies);
+
+// insert new element from position 2 but no remove.
+let companies = ITCompanies.splice(2, 0, 'TCS', 'Accenture');     // return empty array because no element delete.
+console.log(ITCompanies);
+console.log(companies);
+
+// insert new element from position 2 and remove two element
+companies = ITCompanies.splice(2, 2, 'Adobe', 'Delloite');      // return array of deleted element.
+console.log(ITCompanies);
+console.log(`deleted items : ${companies}`);
+
+// removing 2 elements from position 3 and insert no new element.
+companies = ITCompanies.splice(3, 2);                           // return array of deleted element.
+console.log(ITCompanies);
+console.log(`deleted items : ${companies}`);
+
+
+
