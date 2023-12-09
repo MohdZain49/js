@@ -169,7 +169,7 @@ let companies = ITCompanies.splice(2, 0, 'TCS', 'Accenture');     // return empt
 console.log(ITCompanies);
 console.log(companies);
 
-// insert new element from position 2 and remove two element
+// insert new element from position 2 and remove 2 element
 companies = ITCompanies.splice(2, 2, 'Adobe', 'Delloite');      // return array of deleted element.
 console.log(ITCompanies);
 console.log(`deleted items : ${companies}`);
@@ -177,7 +177,43 @@ console.log(`deleted items : ${companies}`);
 // removing 2 elements from position 3 and insert no new element.
 companies = ITCompanies.splice(3, 2);                           // return array of deleted element.
 console.log(ITCompanies);
-console.log(`deleted items : ${companies}`);
+console.log(companies);
 
 
+// 2. slice(starting_index, ending_index: exclusive );              // Returns a copy of a section of an array.
 
+const socialMedia = ['Youtube', 'Whatsapp', 'Facebook', 'Instagram', 'Twitter(X)'];
+let apps = socialMedia.slice(2, 4); 
+
+console.log(apps);
+console.log(socialMedia);                       // not remove any element.
+
+// omit second argument.
+apps = socialMedia.slice(2);                    // slice rest of the array.
+console.log(apps);                 
+
+// undefined first argument.
+apps = socialMedia.slice( undefined , 2);       // slice start at 0 index.
+console.log(apps);
+
+// omit both argument.
+apps = socialMedia.slice();                     // return copy of whole array.
+console.log(apps);
+
+// negative indices.
+apps = socialMedia.slice(-3, -1);              
+console.log(apps);
+
+apps = socialMedia.slice(2, 3, 'snapchat');              
+console.log(apps);
+console.log(socialMedia);
+
+/* _____________________ difference between splice() and slice() ______________________
+
+ # splice method can add new element.      |    # slice method can't add new element                    
+                                
+ # splice method return deleted elements.  |    # slice method return copy of element.
+
+ # splice method change array.             |    # slice method don't change array.   
+
+*/
