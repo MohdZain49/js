@@ -211,9 +211,7 @@ console.log(socialMedia);
 /* _____________________ difference between splice() and slice() ______________________
 
  # splice method can add new element.      |    # slice method can't add new element                    
-                                
  # splice method return deleted elements.  |    # slice method return copy of element.
-
  # splice method change array.             |    # slice method don't change array.   
 
 */
