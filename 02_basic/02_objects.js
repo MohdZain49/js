@@ -2,7 +2,9 @@
 
 // Object is datatype, used to stores items in key:value form.
 
-// Define and create js objects using literals.
+
+// _______________ Define and create js objects using literals. _____________
+
 const myInfo = {firstName:'Mohd', secondName:'Zain', age:21, gender:'male'};
 console.log(myInfo);
 
@@ -13,6 +15,17 @@ const car = {
     colour: 'Black',
 };
 console.log(car);
+
+// _____________________ Define objects using new keyword. ____________________
+// For readability, simplicity and execution speed, use the object literal method.
+
+const userInfo = new Object();
+userInfo.name = 'Mohd Zain';
+userInfo.email = 'mohammedzain4099@gmail.com';
+userInfo.isLoggedIn = false;
+userInfo.password = 789798;
+
+console.log(userInfo);
 
 
 
@@ -50,3 +63,22 @@ const studentResult = {
 
 console.log(`Percentage of student is ${studentResult.percentage()}%`);       // accessing percentage method.
 console.log(`function definition : \n${studentResult.percentage}`);           // return function definition.
+
+
+// Objects are addressed by reference, not by value.
+
+const item = {
+    itemName: 'Ring',
+    itemPrice: 20000,
+    compaName: 'Jewelquick',
+    materialUsed: 'silver',
+    inStock: true,
+}
+console.log(item);
+
+const product = item;       // product is not copy of item, it is item. Both are same.
+console.log(product);
+
+item.itemPrice = 15000;     // change also occurs in product.
+console.log(item);
+console.log(product);
