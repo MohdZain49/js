@@ -28,6 +28,25 @@ userInfo.password = 789798;
 console.log(userInfo);
 
 
+// Objects are addressed by reference, not by value.
+
+const item = {
+    itemName: 'Ring',
+    itemPrice: 20000,
+    compaName: 'Jewelquick',
+    materialUsed: 'silver',
+    inStock: true,
+}
+console.log(item);
+
+const product = item;       // product is not copy of item, it is item. Both are same.
+console.log(product);
+
+item.itemPrice = 15000;     // change also occurs in product.
+console.log(item);
+console.log(product);
+
+
 
 // ******************* Object properties ****************
 
@@ -65,20 +84,3 @@ console.log(`Percentage of student is ${studentResult.percentage()}%`);       //
 console.log(`function definition : \n${studentResult.percentage}`);           // return function definition.
 
 
-// Objects are addressed by reference, not by value.
-
-const item = {
-    itemName: 'Ring',
-    itemPrice: 20000,
-    compaName: 'Jewelquick',
-    materialUsed: 'silver',
-    inStock: true,
-}
-console.log(item);
-
-const product = item;       // product is not copy of item, it is item. Both are same.
-console.log(product);
-
-item.itemPrice = 15000;     // change also occurs in product.
-console.log(item);
-console.log(product);
